@@ -1,0 +1,8 @@
+<svg width="300" height="450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="450" fill="#e5d9c3"/>
+  <g transform="translate(150, 225)">
+    <path d="M-30 -50 L-30 -30 L-20 -30 L-20 -50 Z M-15 -50 L-15 -30 L-5 -30 L-5 -50 Z M0 -50 L0 -30 L10 -30 L10 -50 Z M15 -50 L15 -30 L25 -30 L25 -50 Z M30 -50 L30 -30 L40 -30 L40 -50 Z M-40 -25 L40 -25 L40 50 L-40 50 Z" fill="#c4b097" opacity="0.3"/>
+    <text x="0" y="10" font-family="Georgia, serif" font-size="16" fill="#9e8668" text-anchor="middle">Pas de couverture</text>
+    <text x="0" y="30" font-family="Georgia, serif" font-size="14" fill="#9e8668" text-anchor="middle">disponible</text>
+  </g>
+</svg>
