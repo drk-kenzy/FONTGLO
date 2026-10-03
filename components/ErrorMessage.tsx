@@ -21,7 +21,7 @@ export default function ErrorMessage({ message, retry }: ErrorMessageProps) {
       </div>
       
       <h2 className="font-display text-2xl font-bold text-sepia-800 mb-3">
-        Oups, une erreur s'est produite
+        Oups, une erreur s&apos;est produite
       </h2>
       
       <p className="text-sepia-600 font-body mb-6 max-w-md">

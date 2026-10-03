@@ -1,7 +1,6 @@
 let uuidv4: () => string;
 try {
   // Try to require uuid (may be ESM in some environments); fallback to simple generator
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
   const u = require('uuid');
   uuidv4 = (u && (u.v4 || u.default?.v4)) || (() => Date.now().toString(36) + Math.random().toString(36).slice(2, 7));
 } catch (err) {

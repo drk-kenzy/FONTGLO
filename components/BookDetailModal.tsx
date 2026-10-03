@@ -19,6 +19,10 @@ export default function BookDetailModal({ open, onClose, book }: Props) {
   const [openLibDetails, setOpenLibDetails] = useState<any | null>(null);
   const [editions, setEditions] = useState<any[]>([]);
   const [activeTab, setActiveTab] = useState<'overview' | 'editions' | 'details' | 'similars'>('overview');
+  const [shelves, setShelves] = useState(getShelves());
+  const [showCreateShelfInline, setShowCreateShelfInline] = useState(false);
+  const [newShelfName, setNewShelfName] = useState('');
+  const [pendingEdition, setPendingEdition] = useState<any | null>(null);
   const { addToast } = useToasts();
 
   useEffect(() => {
@@ -71,10 +75,6 @@ export default function BookDetailModal({ open, onClose, book }: Props) {
     : openLibDetails?.first_publish_date ||
       (book as OpenLibraryBook).firstPublishYear;
   const rating = isGlose ? (book as Form).averageRating : null;
-  const [shelves, setShelves] = useState(getShelves());
-  const [showCreateShelfInline, setShowCreateShelfInline] = useState(false);
-  const [newShelfName, setNewShelfName] = useState('');
-  const [pendingEdition, setPendingEdition] = useState<any | null>(null);
 
   function handleAddEditionToShelf(shelfId: string, edition: any) {
     const bookId = addBookToShelf(shelfId, {

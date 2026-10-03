@@ -69,7 +69,7 @@ export default function SearchPage() {
           Recherche de livres
         </h1>
         <p className="text-sepia-600">
-          Recherche via l'API Open Library — ajoutez facilement des livres à vos
+          Recherche via l&apos;API Open Library — ajoutez facilement des livres à vos
           étagères
         </p>
       </motion.div>
